@@ -8,9 +8,40 @@
     margin: 0;
   }
   
+  /* NAVIGATION */
+
   nav {
+    display: flex;
+    justify-content: space-between;
     background-color: white;
     padding: 8px 16px;
+  }
+
+  #destinations, #actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* HERO */
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 57px;
+  }
+
+  #trending {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* SUBNAV */
+  #subnav {
+    display: flex;
+    justify-content: space-between;
   }
   
   p {
@@ -36,7 +67,6 @@
   
   h2 {
     font-size: 16px;
-    margin-bottom: 0;
   }
   
   input {
@@ -49,8 +79,16 @@
   }
   
   main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
     background-color: white;
     padding: 32px 72px;
+  }
+
+  .card {
+    width: 400px;
   }
   
   nav button {
@@ -63,13 +101,15 @@
   }
   
   .img-placeholder {
-    width: 355px;
+    width: 100%;
     height: 270px;
     background-color: gray;
     border-radius: 8px;
   }
   
   .card-footer {
+    display: flex;
+    justify-content: space-between;
     font-size: 14px;
   }
   
